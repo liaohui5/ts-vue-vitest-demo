@@ -22,7 +22,7 @@
           ></el-input>
         </el-form-item>
         <el-form-item label="">
-          <el-button type="primary" @click="handleSubmit">登录</el-button>
+          <x-button color="info" @click="handleSubmit" text="登录" />
         </el-form-item>
       </el-form>
     </el-card>
@@ -36,6 +36,7 @@ import type { FormInstance, FormRules } from "element-plus";
 import { useUserStore } from "@/store/user";
 import { useGoto } from "@/hooks/goto";
 import { createEmailRule, createPasswordRule } from "@/utils/validate-rules";
+import XButton from "@/components/x-button/index.vue";
 
 const { gotoHome } = useGoto();
 
