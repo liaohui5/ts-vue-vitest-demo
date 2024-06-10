@@ -1,15 +1,13 @@
-import axios, {
-  type AxiosError,
-  type AxiosInstance,
-  type AxiosResponse,
-} from "axios";
+import axios from "axios";
 import { getToken, hasToken } from "./token";
 import { errorHandler, DEFAULT_ERR_MSG } from "./httpErrorHandler";
 import { showErrorMsg } from "./msgs";
+import type { AxiosError, AxiosInstance, AxiosResponse } from "axios";
 
 /* @ts-ignore */
 const baseURL = import.meta.env.VITE_APP_BASE_URL;
 
+// 为了保证测试的稳定性能, 应该使用常量, 而不是字符串道理和 RouteNames 一样
 export const TOKEN_HEADER_KEY = "token";
 export const http: AxiosInstance = axios.create({
   baseURL,

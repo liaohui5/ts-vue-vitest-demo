@@ -20,6 +20,7 @@ function setupRouterMock() {
     injectRouterMock(router);
   });
 
+  // 在启动测试的时候直接安装 vue-router-mock 测试工具包实例
   config.plugins.VueWrapper.install(VueRouterMock);
 }
 
