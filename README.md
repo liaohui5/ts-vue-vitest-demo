@@ -23,3 +23,7 @@ npm i
 # npm run dev
 npm run test
 ```
+
+## TODO
+- [ ] 修改 http errorHandler, 分为请求错误处理和响应错误处理
+- [ ] 修改笔记, 将代码链接放到笔记中
