@@ -25,11 +25,17 @@
     "axios-mock-adapter": "^1.21.5",
     "fake-indexeddb": "^4.0.2",
     "happy-dom": "^10.11.2",
+    "msw": "^2.3.1",
     "sass": "^1.66.1",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vitest": "^0.34.3",
     "vue-router-mock": "^1.0.0",
     "vue-tsc": "^1.8.5"
+  },
+  "msw": {
+    "workerDirectory": [
+      ""
+    ]
   }
 }

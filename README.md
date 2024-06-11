@@ -10,9 +10,11 @@ git clone https://github.com/liaohui5/ts-vue-vitest-demo && cd -
 npm i
 ```
 
-## 启动
+## 关于接口
 
-- 运行查看需要[服务端](https://github.com/lh5sa/nestjs-server)
+接口是使用[msw.js](https://mswjs.io/)模拟的,数据交互逻辑并不是这个项目的重点,单元测试和 TDD 开发模式才是重点
+
+## 启动
 
 - 重点是单元测试
 

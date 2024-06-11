@@ -1,0 +1,185 @@
+import { success } from "@/__mock__/wrapper.js";
+
+export const loginResponse = success({
+  id: 1,
+  username: "admin",
+  avatar: "https://iph.href.lu/100x100?text=img",
+  email: "admin@qq.com",
+  status: 0,
+  created_at: "2024-06-10T17:17:09.000Z",
+  permissions: [
+    {
+      id: 1,
+      type: 0,
+      desc: "用户管理",
+      method: "NULL",
+      icon: "fa-users",
+      path: "/",
+      status: 0,
+      pid: 0,
+    },
+    {
+      id: 2,
+      type: 0,
+      desc: "用户列表",
+      method: "NULL",
+      icon: "fa-user",
+      path: "/users",
+      status: 0,
+      pid: 1,
+    },
+    {
+      id: 3,
+      type: 0,
+      desc: "权限管理",
+      method: "NULL",
+      icon: "fa-get-pocket",
+      path: "/",
+      status: 0,
+      pid: 0,
+    },
+    {
+      id: 4,
+      type: 0,
+      desc: "角色管理",
+      method: "NULL",
+      icon: "fa-id-card",
+      path: "/roles",
+      status: 0,
+      pid: 3,
+    },
+    {
+      id: 5,
+      type: 0,
+      desc: "权限管理",
+      method: "NULL",
+      icon: "fa-unlock",
+      path: "/permissions",
+      status: 0,
+      pid: 3,
+    },
+  ],
+  token:
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluQHFxLmNvbSIsInN1YiI6MSwiaWF0IjoxNzE4MDg2NTMyLCJleHAiOjE3MTgxNzI5MzJ9.SETtizC1zdEumqGLArx3P0JtUkhq2BEy9cR3n39gtUo",
+});
+
+export const userListResponse = success({
+  count: 20,
+  rows: [
+    {
+      id: 1,
+      username: "admin",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "admin@qq.com",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [
+        {
+          id: 1,
+          role_name: "超级管理员",
+          role_desc: "拥有所有权限",
+        },
+      ],
+    },
+    {
+      id: 2,
+      username: "金超",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "n.royl@nzcq.lc",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [
+        {
+          id: 2,
+          role_name: "用户管理员",
+          role_desc: "可以查看用户管理",
+        },
+      ],
+    },
+    {
+      id: 3,
+      username: "袁秀兰",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "t.mqff@hnhjgejcr.km",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [],
+    },
+    {
+      id: 4,
+      username: "苏艳",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "e.bkpnbkik@sjkxlx.bn",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [],
+    },
+    {
+      id: 5,
+      username: "贾丽",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "x.cyoswcpp@wuwemxjuqu.io",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [],
+    },
+    {
+      id: 6,
+      username: "毛洋",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "j.jclnqdtu@fla.com",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [],
+    },
+    {
+      id: 7,
+      username: "汪桂英",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "b.nvzlmo@qrbnp.qa",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [],
+    },
+    {
+      id: 8,
+      username: "吕刚",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "n.dhovjzx@nmephqf.kw",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [],
+    },
+    {
+      id: 9,
+      username: "顾磊",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "y.kqmcnz@ljgxrnmlh.pe",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [],
+    },
+    {
+      id: 10,
+      username: "吕敏",
+      avatar: "https://iph.href.lu/100x100?text=img",
+      email: "c.fkbe@gsgflqok.pr",
+      status: 0,
+      created_at: "2024-06-10T17:17:09.000Z",
+      roles: [],
+    },
+  ],
+});
+
+export const createUserResponse = success({
+  status: 1,
+  id: 22,
+  username: "new-user",
+  email: "new-user@qq.com",
+  password: "$2a$10$hVhw86StK1DZ3CQ4xpGB3eP8UuNNA/VQxplkSNUISM60KvpqzuST.",
+  created_at: "2024-06-11T06:56:16.257Z",
+});
+
+export const updateUserResponse = success([1]);
+
+export const updatePasswordResponse = success([1]);
