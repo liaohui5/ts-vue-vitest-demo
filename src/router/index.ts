@@ -16,13 +16,13 @@ export function setupRouter(app: App) {
   setupRouterGuards(router);
   setRouterInstance(router);
   app.use(router);
+  return router.isReady();
 }
 
 // 为什么需要单独的封装两个这样的函数?
 // 因为 useRouter 这种组合式的 API 只能在 setup 中使用
 // 如果想要在 setup 外界获取这个 router 实例, 就需要封装
 // 下这两个助手函数来便于在其他 js 中调用 vue-router
-
 
 // 设置路由实例, 因为这个是在 setupRouter 中调用的, 所以
 // 在调用获取路由实例方法的时候, 确保一定能够获取到这个对象

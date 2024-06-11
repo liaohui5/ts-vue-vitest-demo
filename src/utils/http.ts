@@ -17,7 +17,7 @@ export const http: AxiosInstance = axios.create({
   },
 });
 
-// global request interceptors
+// 全局请求拦截器
 http.interceptors.request.use((config) => {
   if (hasToken()) {
     config.headers![TOKEN_HEADER_KEY] = getToken();
@@ -26,7 +26,7 @@ http.interceptors.request.use((config) => {
   return config;
 });
 
-// global reponse interceptors
+// 全局响应拦截器
 http.interceptors.response.use(
   ({ data: response }: AxiosResponse) => {
     const { success, data, msg } = response;
